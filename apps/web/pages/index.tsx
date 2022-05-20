@@ -1,5 +1,4 @@
 import useSWR from "swr";
-import { Button } from "ui";
 
 const fetcher = (url: any) => fetch(url).then((r) => r.json())
 
@@ -11,7 +10,7 @@ export default function Web() {
   return (
     <div>
       <h1>Web</h1>
-      <Button />
+      <pre>{JSON.stringify(data)}</pre>
     </div>
   );
 }
